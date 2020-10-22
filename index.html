@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+  </head>
+
+  <body>
+    <script type="text/javascript">
+		navigator.clipboard.readText()
+		  .then(text => {
+		    console.log('Pasted content: ', text);
+		  })
+		  .catch(err => {
+		    console.error('Failed to read clipboard contents: ', err);
+		  });   
+    </script>
+  </body>
+</html>
